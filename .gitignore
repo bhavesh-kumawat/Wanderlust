@@ -5,3 +5,41 @@ backend/node_modules
 /node_modules
 coverage/
 .idea/
+
+# =========================
+# Terraform
+# =========================
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.lock.hcl
+
+# =========================
+# Terraform Variables (Secrets)
+# =========================
+terraform.tfvars
+*.tfvars
+*.tfvars.json
+
+# =========================
+# SSH Keys (CRITICAL)
+# =========================
+*key*
+*.pem
+*.pub
+
+# =========================
+# Logs
+# =========================
+crash.log
+crash.*.log
+wget-log
+*.log
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+.vscode/
